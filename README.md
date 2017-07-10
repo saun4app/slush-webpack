@@ -10,10 +10,10 @@ Install `slush-webpack` globally:
 npm install -g slush-webpack
 ```
 
-Remember to install `slush` globally as well, if you haven't already:
+Remember to install `slush` and `gulp` globally as well, if you haven't already:
 
 ```bash
-npm install -g slush
+npm install -g slush gulp
 ```
 
 ## Usage
