@@ -82,7 +82,7 @@ npm test
 To make the app ready for deploy to production run:
 
 ```bash
-npm run dist
+npm run build
 ```
 
 Now you have a `./dist` folder with all your scripts and stylesheets concatenated and minified.
@@ -95,7 +95,7 @@ To serve the app in production you can run the script:
 npm start
 ```
 
-Now you have a production server serving your app in the port 5000.
+Now you have a production server serving your app from the `./dist` folder in port 5000.
 
 ## License
 
