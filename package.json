@@ -24,15 +24,17 @@
     "url": "https://github.com/igpc/slush-webpack/issues"
   },
   "homepage": "https://github.com/igpc/slush-webpack#readme",
-  "devDependencies": {
+  "dependencies": {
     "git-config": "0.0.7",
     "gulp": "^3.9.1",
     "gulp-conflict": "^0.4.0",
     "gulp-rename": "^1.2.2",
     "gulp-template": "^4.0.0",
     "inquirer": "^3.2.0",
-    "nodegit": "^0.18.3",
     "tape": "^4.7.0",
     "underscore.string": "^3.3.4"
+  },
+  "devDependencies": {
+    "tape": "^4.7.0"
   }
 }
