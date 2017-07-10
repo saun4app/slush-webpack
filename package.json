@@ -1,0 +1,38 @@
+{
+  "name": "slush-webpack",
+  "version": "1.0.0",
+  "description": "A slush generator to scaffold a simple SPA application template with karma and tape for unit testing, serve for production and webpack for development and building.",
+  "main": "slushfile.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test tape"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/igpc/slush-webpack.git"
+  },
+  "keywords": [
+    "slushgenerator",
+    "webpack",
+    "karma",
+    "serve",
+    "tape",
+    "slush"
+  ],
+  "author": "Ignacio Picun <ignaciopicun@yahoo.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/igpc/slush-webpack/issues"
+  },
+  "homepage": "https://github.com/igpc/slush-webpack#readme",
+  "devDependencies": {
+    "git-config": "0.0.7",
+    "gulp": "^3.9.1",
+    "gulp-conflict": "^0.4.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-template": "^4.0.0",
+    "inquirer": "^3.2.0",
+    "nodegit": "^0.18.3",
+    "tape": "^4.7.0",
+    "underscore.string": "^3.3.4"
+  }
+}
