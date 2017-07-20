@@ -17,7 +17,7 @@ npm install -g slush-webpack
 
 ### Create a new project folder and install packages:
 
-You will now be prompted to give some information to scaffold your application.
+You will be prompted to give some information to scaffold your application.
 
 ```bash
 mkdir my-app
