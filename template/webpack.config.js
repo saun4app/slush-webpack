@@ -3,7 +3,7 @@ var webpack = require("webpack");
 var BabiliPlugin = require("babili-webpack-plugin");
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
-var { keys, assign } = Object;
+// var { keys, assign } = Object;
 
 var isProduction = process.env.NODE_ENV === "production";
 var isTest = process.env.NODE_ENV === "test";
@@ -61,10 +61,10 @@ config.module.rules = [
 config.plugins = [];
 config.plugins.push(
   new webpack.DefinePlugin(
-    keys(process.env)
+    Object.keys(process.env)
       .filter(key => key.toLowerCase().indexOf("wapp_") === 0)
       .reduce(
-        (env, key) => assign({ ["process.env." + key]: process.env[key] }, env),
+        (env, key) => Object.assign({ ["process.env." + key]: process.env[key] }, env),
         {}
       )
   )
