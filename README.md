@@ -4,35 +4,27 @@
 
 ## Installation
 
-Install `slush-webpack` globally:
+Install `gulp`, `slush` and `slush-webpack` globally:
 
 ```bash
+npm install -g gulp
+npm install -g slush
 npm install -g slush-webpack
 ```
 
-Remember to install `slush` and `gulp` globally as well, if you haven't already:
-
-```bash
-npm install -g slush gulp
-```
 
 ## Usage
 
-Create a new folder for your project:
+### Create a new project folder and install packages:
+
+You will now be prompted to give some information to scaffold your application.
 
 ```bash
 mkdir my-app
-```
-
-Run the generator from within the new folder:
-
-```bash
 cd my-app
-
 slush webpack
+npm install
 ```
-
-You will now be prompted to give some information to scaffold your application.
 
 ### Project structure
 
