@@ -4,7 +4,7 @@ var template = require("gulp-template");
 var rename = require("gulp-rename");
 var inquirer = require("inquirer");
 var _ = require("underscore.string");
-var gitconfig = require("git-config");
+// var gitconfig = require("git-config");
 
 gulp.task("default", function() {
   return inquirer
@@ -31,7 +31,8 @@ gulp.task("default", function() {
         type: "input",
         name: "author",
         message: "Who's your app author?",
-        default: getAuthorProposal(gitconfig.sync())
+        default: "author name"
+        // default: getAuthorProposal(gitconfig.sync())
       },
       {
         type: "input",
@@ -77,6 +78,8 @@ function getNameProposal() {
   }
 }
 
+/*
 function getAuthorProposal(config) {
   return `${config.user.name} <${config.user.email}>`;
 }
+*/
